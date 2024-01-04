@@ -158,7 +158,7 @@ def tinysticker(update: Update, context: CallbackContext):
             xx.delete()
 
         except Exception as e:
-            msg.reply_text(f'Error Report @Am_Support, {e}')
+            msg.reply_text(f'Error Report @AnjalixSupportxGroup, {e}')
 
 
 
