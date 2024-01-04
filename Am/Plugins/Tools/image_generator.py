@@ -175,7 +175,7 @@ def mangadown(client, message):
             message.reply_photo(
                 photo=f"{x}",
                 caption=
-                f"**Prompt** - `{msg}`\n**Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @AM_YTSUPPORT"
+                f"**Prompt** - `{msg}`\n**Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})**\nJoin @AnjalixSupportxGroup"
             )
 
             app.send_message(
@@ -183,7 +183,7 @@ def mangadown(client, message):
                 text=
                 f"**Prompt** - `{msg}` \n**Requested by [{message.from_user.first_name}](tg://user?id={message.from_user.id})** {message.link}"
             )
-            app.send_photo(-1001691751309, photo=x)
+            app.send_photo(-1001970031336, photo=x)
 
         # Update progress message
         progress_message.edit_text("Image generated! ({:.0f}%)".format(total_progress))
