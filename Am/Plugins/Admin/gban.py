@@ -329,7 +329,7 @@ def agban(update: Update, context: CallbackContext) -> str:
                 user_id, "#EVENT"
                 "You have been marked as Malicious and as such have been banned from any future groups we manage. get some life bruh."
                 f"\n<b>Reason:</b> <code>{html.escape(reason)}</code>"
-                f"</b>Appeal Chat:</b> @MAHTOxOFFICIAL",
+                f"</b>Appeal Chat:</b> @AnjalixSupportxGroup",
                 parse_mode=ParseMode.HTML)
         except:
             pass  # bot probably blocked by user
@@ -528,7 +528,7 @@ def scan(update: Update, context: CallbackContext):
             "#EVENT"
             "You have been marked as Malicious and as such have been banned from any future groups we manage."
             f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-            f"</b>Appeal Chat:</b> @MAHTOxOFFICIAL",
+            f"</b>Appeal Chat:</b> @AnjalixSupportxGroup",
             parse_mode=ParseMode.HTML,
         )
     except:
@@ -684,7 +684,7 @@ def check_and_ban(update, user_id, should_message=True):
             text = (
                 f"<b>Alert</b>: this user is globally banned.\n"
                 f"<code>*bans them from here*</code>.\n"
-                f"<b>Appeal chat</b>: @MAHTOxOFFICIAL\n"
+                f"<b>Appeal chat</b>: @AnjalixSupportxGroup"
                 f"<b>User ID</b>: <code>{user_id}</code>"
             )
             user = sql.get_gbanned_user(user_id)
@@ -773,7 +773,7 @@ def __user_info__(user_id):
         user = sql.get_gbanned_user(user_id)
         if user.reason:
             text += f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-        text += f"\n<b>Appeal Chat:</b> @MAHTOxOFFICIAL"
+        text += f"\n<b>Appeal Chat:</b> @AnjalixSupportxGroup"
     else:
         text = text.format("???")
     return text
@@ -791,7 +791,7 @@ __help__ = """*Admins only*:
 ‣ `/antispam <on/off/yes/no>`: Toggles our antispam technology or returns your current settings.
 
 Anti-Spam is used by bot developers to ban spammers across all groups. This helps protect you and your groups by removing spam flooders as quickly as possible.
-*Note:* Users can appeal gbans or report spammers at `@MAHTOxOFFICIAL."""
+*Note:* Users can appeal gbans or report spammers at `@AnjalixSupportxGroup."""
 
 GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
 SCAN_HANDLER = CommandHandler("scan", scan, run_async=True)
