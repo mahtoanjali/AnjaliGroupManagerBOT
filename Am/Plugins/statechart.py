@@ -31,7 +31,7 @@ def pstate(update: Update, context: CallbackContext):
     # show plot
     fig.savefig(fname)
     message.reply_photo(ofile,
-                     caption="Made By @Am_Robot",
+                     caption="Made By @QUEENx_GOD",
                      parse_mode=ParseMode.HTML,)
     plt.close(fig)
 
