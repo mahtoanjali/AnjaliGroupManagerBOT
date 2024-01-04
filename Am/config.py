@@ -10,19 +10,19 @@ def get_user_list(config, key):
 class Config(object):
     LOGGER = True
 
-    API_ID = "12227067"
-    API_HASH = "b463bedd791aa733ae2297e6520302fe"
+    API_ID = "21011056"
+    API_HASH = "696033b1a9c35f0dc027f8ecfbaa9645"
     TOKEN = ""
     OWNER_ID = ""
     OWNER_USERNAME = ""
     UPDATES = ""
     BOT_USERNAME = ""
-    SUPPORT_CHAT = "AM_YTSUPPORT"
-    JOIN_LOGGER = "-1001841879487"
-    EVENT_LOGS = "-1001841879487"
+    SUPPORT_CHAT = "AnjalixSupportxGroup"
+    JOIN_LOGGER = "-1001970031336"
+    EVENT_LOGS = "-1001970031336"
     BOT_USERNAME = ""
     BOT_NAME = ""
-    GBANS = "AMBOTYT" 
+    GBANS = "QUEENx_GOD" 
     CHAT_GROUP = ""
     # 
     # DATABASE_URL = "postgres://ixweewbx:9OoB_feF6d6wK1W4YycgwHzRHQXezsNA@arjuna.db.elephantsql.com/ixweewbx"  # sql
