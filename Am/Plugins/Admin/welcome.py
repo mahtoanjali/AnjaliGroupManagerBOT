@@ -158,7 +158,7 @@ def new_member(update: Update, context: CallbackContext):
 
         if new_mem.id == bot.id and not Am.ALLOW_CHATS:
             with suppress(BadRequest):
-                update.effective_message.reply_text(f"I cant join more groups now due to increasing userbase and load.\nAdd my friend @KoraX_Bot instead\n • Same Am Code\n • Same Support\n • Same Updates channel\n\nPowered by @Am_Support")
+                update.effective_message.reply_text(f"I cant join more groups now due to increasing userbase and load.\nAdd my friend @anjalixmanagerbot instead\n • Same Am Code\n • Same Support\n • Same Updates channel\n\nPowered by @AnjalixSupportxGroup)
             bot.leave_chat(update.effective_chat.id)
             return
 
